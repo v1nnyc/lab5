@@ -5,6 +5,13 @@ $(document).ready(function() {
 	initializePage();
 })
 
+$("#name").click(function(e){
+
+	$("#name").text(anagrammedName(e));
+	e.preventDefault();
+});
+
+}
 /*
  * Function that is called when the document is ready.
  */
@@ -13,6 +20,7 @@ function initializePage() {
 }
 
 function anagrammedName(name) {
+
 	// Thanks, Internet Anagram Server!
 	
 	if (name == "Doug Engelbart") {

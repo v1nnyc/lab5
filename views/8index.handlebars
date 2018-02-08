@@ -21,14 +21,12 @@
 		<p> All my friends are fake </p>
 	</div>
 
-	{{#each friends}}
-      <div class="friends">
-      	<img src="{{imageURL}}" ... / id="friends" class = "img-rounded" class = 
-      	img-responsive">
-      	<a href="#" id="name">
-      		<h3>{{name}}</h3>
-      	</a>
-      	<p>{{description}}</p>
+	{{#each projects}}
+      <div class="friend" id="{{id}}">
+        <a href="project/{{name}}" class="thumbnail">
+          <img src="images/{{image}}" ... />
+          <p>{{name}}</p>
+        </a>
       </div>
     {{/each}}
 

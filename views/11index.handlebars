@@ -15,20 +15,19 @@
 	<div class="container">
 	<h1>My HCI Friends</h1>
 
-	<div>
+	<!--<div>
 		<h3>fake friend!</h3>
 		<img src="https://pics.me.me/the-most-dangerous-creature-on-this-earth-is-a-fake-18516856.png" alt="fakey">
 		<p> All my friends are fake </p>
-	</div>
+	</div>-->
 
-	{{#each friends}}
-      <div class="friends">
-      	<img src="{{imageURL}}" ... / id="friends" class = "img-rounded" class = 
-      	img-responsive">
-      	<a href="#" id="name">
-      		<h3>{{name}}</h3>
-      	</a>
-      	<p>{{description}}</p>
+	{{#each friend}}
+      <div class="friends" id="{{id}}">
+      	<p>test</p>
+        <a href="project/{{name}}" class="thumbnail">
+          <img src="images/{{image}}" ... />
+          <p>{{name}}</p>
+        </a>
       </div>
     {{/each}}
 
